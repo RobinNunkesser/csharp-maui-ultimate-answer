@@ -1,7 +1,7 @@
-﻿using Italbytz.Ports.Common;
+﻿using Italbytz.Common.Abstractions;
 
 namespace UltimateAnswer.Core.Ports
 {
     public interface IGetAnswerService
-        : IService<string, string> { }
+        : IAsyncService<string, string> { }
 }

@@ -1,13 +1,13 @@
 ﻿namespace UltimateAnswer;
 
 using System.Diagnostics;
-using Italbytz.Ports.Common;
+using Italbytz.Common.Abstractions;
 using UltimateAnswer.Core;
 using UltimateAnswer.Infrastructure.Adapters;
 
 public partial class MainPage : ContentPage
 {
-    private readonly IService<String, String> _service =
+    private readonly IAsyncService<String, String> _service =
         new GetAnswerService(new SuperComputerAdapter());
 
     public MainPage()

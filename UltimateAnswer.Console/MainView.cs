@@ -1,4 +1,4 @@
-﻿using Italbytz.Ports.Common;
+﻿using Italbytz.Common.Abstractions;
 using System.Threading.Tasks;
 using UltimateAnswer.Core;
 using UltimateAnswer.Infrastructure.Adapters;
@@ -7,7 +7,7 @@ namespace UltimateAnswer.Console
 {
     public class MainView
     {
-        private readonly IService<string, string> _service =
+        private readonly IAsyncService<string, string> _service =
             new GetAnswerService(new SuperComputerAdapter());
 
         public async Task StartAsync()

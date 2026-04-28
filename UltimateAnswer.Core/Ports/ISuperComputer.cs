@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using Italbytz.Ports.Common;
+using Italbytz.Common.Abstractions;
 
 namespace UltimateAnswer.Core.Ports
 {

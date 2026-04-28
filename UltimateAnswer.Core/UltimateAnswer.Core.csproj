@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -12,9 +12,9 @@
       <LangVersion>8.0</LangVersion>
     </PropertyGroup>
     <ItemGroup>
-      <None Remove="Italbytz.Ports.Common" />
+      <None Remove="Italbytz.Common.Abstractions" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Italbytz.Ports.Common" Version="0.4.0" />
+      <PackageReference Include="Italbytz.Common.Abstractions" Version="1.0.1" />
     </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿using Italbytz.Ports.Common;
+﻿using Italbytz.Common.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,7 +24,7 @@ namespace UltimateAnswer.WinApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly IService<String, String> _service =
+        private readonly IAsyncService<String, String> _service =
             new GetAnswerService(new SuperComputerAdapter());
 
         public MainWindow()
